@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search= (props) => {
+const Search= () => {
   return <h1>This is the Search Component</h1>;
 };
 

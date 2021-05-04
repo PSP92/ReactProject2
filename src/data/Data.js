@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Data= (props) => {
+const Data= () => {
   return <h1>This is the Data Component</h1>;
 };
 
