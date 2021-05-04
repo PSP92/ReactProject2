@@ -4,6 +4,7 @@ import Artist from "./components/Artist"
 import Nav from "./components/Nav"
 import Search  from "./components/Search"
 import Song from "./components/Song"
+import Context from "./data/Context"
 import Main from "./data/Main"
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
       <Switch>
       <Route exact path="/">
         <Main/>
+        <Context/>
       </Route>
       <Route path="/Artist">
         <Artist/>
