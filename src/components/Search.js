@@ -1,7 +1,14 @@
 import React from "react";
 
-const Search= () => {
-  return <h1>This is the Search Component</h1>;
+const Search= (props) => {
+  return (
+ <div>
+   <form>
+     <input type="text"/>
+     <input type="submit" value="submit"/>
+   </form>
+ </div>
+  )
 };
 
 export default Search;
