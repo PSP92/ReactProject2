@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export const Context = React.createContext();
-export function ContextController({ children }) {
+const Context = React.createContext();
+function ContextController({ children }) {
   let intialState = {
     track_list: [],
     heading: ""
@@ -30,4 +30,4 @@ export function ContextController({ children }) {
     <Context.Provider value={[state, setState]}>{children}</Context.Provider>
   );
 }
-export default Main;
+export default Context
