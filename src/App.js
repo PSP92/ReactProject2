@@ -5,6 +5,7 @@ import Nav from "./components/Nav"
 import Search  from "./components/Search"
 import Song from "./components/Song"
 import Main from "./data/Main"
+import Data from "./data/Data"
 import './App.css';
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
       <Route path="/Search">
         <Search/>
       </Route>
+      <Data/>
       </Switch>
+ 
       </div>
   );
 }
