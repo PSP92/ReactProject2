@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-
+// TRYING CODE FROM SIMILAR REACT APP TO SEE IF ITS ME OR MY DATA
 //Create a Context
 const Context = React.createContext();
 
