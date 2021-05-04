@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
 
-## Available Scripts
+- [https://github.com/PSP92/ReactProject](https://github.com/PSP92/ReactProject)
+- [https://reactprojecttm.netlify.app/](https://reactprojecttm.netlify.app/)
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+I want to create a site where you can search artists songs and lyrics. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Something like spotify or applemusic.
+[https://open.spotify.com/](https://open.spotify.com/)
+ 689818
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## API
+songs
+[https://genius.p.rapidapi.com/songs/442856](https://genius.p.rapidapi.com/songs/442856)
 
-### `npm test`
+artist
+[https://genius.p.rapidapi.com/artists/16775](https://genius.p.rapidapi.com/artists/16775)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+search
+[https://genius.p.rapidapi.com/search?q=Kendrick%20Lamar](https://genius.p.rapidapi.com/search?q=Kendrick%20Lamar)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframes
 
-### `npm run eject`
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [wireframes](https://wireframepro.mockflow.com/view/ 
+Md203ae652661ea61a3c064e98f09bd6d1619787024533
+)
+- []()
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### MVP/PostMVP - 5min
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-## Learn More
+#### MVP EXAMPLE
+nav menu that links to artist, song, lyrics
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+add cards
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+configure buttons
 
-### Code Splitting
+#### PostMVP EXAMPLE
+add multiple pages 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-### Making a Progressive Web App
+| Component | Description | 
+| --- | :---: |  
+| App | Sets up app with React Router | 
+| Header | Renders the header, including the nav | 
+| Footer | Renders the footer |
+| Main | Contains Switch/Routes for content |
+| Artist| Renders the artists profuile |
+| Song | Renders song lyrics |
+| Nav | Sets the links and searchbar |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Unless otherwise noted, time is listed in hours:
 
-### Deployment
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Create React app and files for all components | H | 1 |  |  |
+| Basic Navbar & Footer | H | 1 |  | |
+| Set up basic React routing | H | 1 |  |  |
+| API setup and call data | H | 2 | | |
+| Link data to artist | H | 2 |  | |
+|create artist cards| H | 2| | |
+| Link data to song | H | 2 | | |
+|Route all data | H | 2 | | |
+| Get the searchbar workig| H | 3 |  | |
+| Incorporate selected options into API call | H | 1 | | |
+|styling for page | L | 4 |  |  |
+|styling for Navbar, Footer, other pages | L | 4 |  |  |
+|Toatal | | 25 |  |  |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Additional Libraries
+
+
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
+
+
+
