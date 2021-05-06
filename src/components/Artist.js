@@ -4,10 +4,10 @@ function Artist () {
   const [artistlist, setArtistList] =useState ([])
    
   const getArtistList = async () => {
-    const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/artist.search?q_artist=prodigy&page_size=15&apikey=9b0be27a6f92a80c6753a5b1a9227097")
+    const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/artist.search?q_artist=&page_size=15&apikey=9b0be27a6f92a80c6753a5b1a9227097")
     const data = await response.json()
     setArtistList(data.results)  
-  console.log(data)
+  // console.log(data)
   }
   
   useEffect (() => {getArtistList()}, [])
