@@ -82,7 +82,7 @@ Unless otherwise noted, time is listed in hours:
 |create artist cards| H | 2| | |
 | Link data to song | H | 2 | | |
 |Route all data | H | 2 | | |
-| Get the searchbar workig| H | 3 |  | |
+| Get the searchbar working| H | 3 |  | |
 | Incorporate selected options into API call | H | 1 | | |
 |styling for page | L | 4 |  |  |
 |styling for Navbar, Footer, other pages | L | 4 |  |  |

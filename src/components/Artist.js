@@ -11,15 +11,22 @@ function Artist () {
   }
   
   useEffect (() => {getArtistList()}, [])
-
+ 
   return (
+  
     <div className="Artist" artistlist={artistlist}>
+      {/* {props.artistlist.map((artist,index) => {
+        return (
+          <h1 onClick={()=> props.selectArtist(artist)}>{artist.track_name}</h1>
+        )
+      } ) } */}
      <form>
      <input type="text"/>
      <input type="submit" value="submit"/>
    </form>
   </div>
   )
+  
 };
 
 export default Artist;

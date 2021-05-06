@@ -1,33 +1,30 @@
 import {useEffect, useState} from "react"
 
 
-function Main (props) {
+function Main () {
   const [tracklist, setTrackList] =useState ([])
-  const {track} = props
+  // const {track} = props
    
   const getTrackList = async () => {
     const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=8&country=us&f_has_lyrics=1&apikey=9b0be27a6f92a80c6753a5b1a9227097")
     const data = await response.json()
-    setTrackList(data.results)  
+    setTrackList({
+      id:data.track_id,
+      name:data.track_name,
+      artist:data.track_artist,
+    })  
   console.log(data)
   }
   
   useEffect (() => {getTrackList()}, []);
 
-  // const TrackListDisplay =({track}) =>{
-  //   return (
-  //     <> 
-  //     <p>{track}</p>
-  //     </>
-  //   )
-  // }
 
   return (
     <div className="Main" tracklist={tracklist}>
       {/* <Form tracksearch={getTrackList}/> */}
       {/* <TrackListDisplay tracklist={tracklist}/> */}
     <h2>Trending Songs Chart</h2>
-     <h5>{track.track_name}</h5>
+     {/* <h5>{track.track_name}</h5> */}
     {/* used bootstrap to make cards  */}
     {/* <div className="row"          >
     <div className="col-sm-6">
