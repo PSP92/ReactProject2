@@ -1,15 +1,15 @@
 import {useEffect, useState} from "react"
 
 
-function Main () {
+function Main (props) {
   const [tracklist, setTrackList] =useState ([])
-  // const [trackdata, setTrackData]= useState(null)
+  const {track} = props
    
   const getTrackList = async () => {
     const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=8&country=us&f_has_lyrics=1&apikey=9b0be27a6f92a80c6753a5b1a9227097")
     const data = await response.json()
     setTrackList(data.results)  
-  // console.log(data)
+  console.log(data)
   }
   
   useEffect (() => {getTrackList()}, []);
@@ -27,7 +27,7 @@ function Main () {
       {/* <Form tracksearch={getTrackList}/> */}
       {/* <TrackListDisplay tracklist={tracklist}/> */}
     <h2>Trending Songs Chart</h2>
-  
+     <h5>{track.track_name}</h5>
     {/* used bootstrap to make cards  */}
     {/* <div className="row"          >
     <div className="col-sm-6">

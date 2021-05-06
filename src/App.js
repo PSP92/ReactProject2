@@ -4,7 +4,6 @@ import Artist from "./components/Artist"
 import Nav from "./components/Nav"
 import Search  from "./components/Search"
 import Song from "./components/Song"
-
 import Main from "./data/Main"
 import './App.css';
 
