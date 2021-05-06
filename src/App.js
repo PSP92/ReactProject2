@@ -5,12 +5,9 @@ import Nav from "./components/Nav"
 import Search  from "./components/Search"
 import Song from "./components/Song"
 import Main from "./data/Main"
-import trackArr from "./data/Trackdata"
-// console.log('track:', trackArr)
 import './App.css';
 
 function App() {
-// const track = trackArr.map((track,index) => {
 return (
     <div className="App">
       <Nav/>
@@ -34,5 +31,4 @@ return (
 }
 // )
 // }
-console.log('track:',trackArr)
 export default App;
