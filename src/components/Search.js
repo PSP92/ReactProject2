@@ -1,5 +1,4 @@
-import {useEffect, useState} from "react"
-// import Artist from "./Artist"
+import React, {useEffect, useState} from "react"
 function Search () {
   const [searchlist, setSearchList] =useState ([])
    
