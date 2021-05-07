@@ -13,6 +13,7 @@ function Search () {
 
   return (
     <div className="search">
+      {/* <form> */}
      <form searchlist={searchlist}>
      <input type="text" />
      <input type="submit" value="submit"/>

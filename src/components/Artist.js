@@ -21,7 +21,7 @@ const loaded =() => {
   return  <h2>{artistlist[0].body.artist_list[0].artist.artist_id} Artist goes here</h2>
 }
 const loading =() => {
-     return <h1>loading</h1>
+     return <h1>loading....</h1>
      }
      
 return (
