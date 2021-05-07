@@ -17,7 +17,9 @@ function Artist (props) {
         props.search(form.searchTerm)
     }
   
-    return( 
+    return  ( 
+      <div className="artistcard">
+        <Artist setForm={setForm}>
     <form onSubmit={handleSubmit}>
     <input 
     type="text" 
@@ -25,7 +27,9 @@ function Artist (props) {
     alue={props.searchTerm} 
     name="searchTerm"/>
   <input type="submit" value="search"/>
-    </form>;
+    </form>
+    </div>
+    ;
     )
   }
   

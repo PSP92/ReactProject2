@@ -1,39 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 .nav {
   display: flex;
   justify-content: space-between;
   background-color: pink;
-  color:black;
+  color: black;
   padding: 15px;
   font-size: 2em;
 }
-.Song{
-  color:black;
+.Song {
+  color: black;
   font-size: 15px;
-
-
 }
-.artistname{
+.songcard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid gray;
+  width: 45vw;
+  margin: 10px auto;
+}
+#album-cover {
+  border: 1px solid gray;
+  height: 250px;
+  width: 250px;
+  margin: 10px auto;
+  background-image: radial-gradient(circle, #ffe6e6, #ff9999,#ff4d4d);
+}
+.songinfo{
+  width:300px;
+}
+.artistname {
   color: black;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .nav a {
-  color:black;
+  color: black;
   text-decoration: none;
 }
 body {

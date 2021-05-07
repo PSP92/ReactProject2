@@ -22,6 +22,7 @@ const Search = (props) => {
   //The component must return some JSX
   return (
     <div>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"

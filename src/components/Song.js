@@ -8,9 +8,15 @@ console.log(props.tracklist)
   foo = props.tracklist.track.map (
    (track, index) => {
      return (
-       <div>
-       <p className="trackname">Song: {track.name}</p>
-       <p className="artistname">Artist: {track.artist.name}</p>
+       <div className="songcard">
+         <div id="album-cover">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8IHeTt2lY5SRMNO1HiYpwiQmgXLVyS9BIw&usqp=CAU"/>
+           ALBUM COVER
+           </div>
+         <div className="songinfo">
+            <p className="trackname">Song: {track.name}</p>
+            <p className="artistname">Artist: {track.artist.name}</p>
+          </div>
        </div>
      )
    }
