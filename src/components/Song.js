@@ -9,8 +9,8 @@ console.log(props.tracklist)
    (track, index) => {
      return (
        <div>
-       <p>{track.name}</p>
-       <p>{track.artist.name}</p>
+       <p className="trackname">Song: {track.name}</p>
+       <p className="artistname">Artist: {track.artist.name}</p>
        </div>
      )
    }
@@ -21,13 +21,50 @@ console.log(props.tracklist)
 
   return (
     <div className="Song">
-<p> dispaly me</p>
+<h3> Top 50</h3>
 {foo}
   </div>
   )
 }
 
 export default Song;
+
+
+
+
+
+
+
+// import React from "react"
+
+// const Song = (props) => {
+// console.log(props.tracklist)
+//   // let track = 0
+//   let foo = 0
+//   if (props.tracklist !== null) {
+//   foo = props.tracklist.track.map (
+//    (track, index) => {
+//      return (
+//        <div>
+//        <p>{track.name}</p>
+//        <p>{track.artist.name}</p>
+//        </div>
+//      )
+//    }
+//  )
+
+// }
+ 
+
+//   return (
+//     <div className="Song">
+// <p> dispaly me</p>
+// {foo}
+//   </div>
+//   )
+// }
+
+// export default Song;
 
 
 

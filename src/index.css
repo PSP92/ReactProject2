@@ -21,6 +21,16 @@ code {
   padding: 15px;
   font-size: 2em;
 }
+.Song{
+  color:black;
+  font-size: 15px;
+
+
+}
+.artistname{
+  color: black;
+  font-weight: bold;
+}
 
 .nav a {
   color:black;

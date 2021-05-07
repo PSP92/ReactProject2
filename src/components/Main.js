@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
-// App 
 // import Artist from "./components/Artist"
 import Song from "./Song"
+import Search from "./Search"
 function Main () {
   const [tracklist, setTrackList] =useState (null)
   // const [searchlist, setSearchList] =useState (null)
@@ -25,22 +25,78 @@ let track = '';
    }
     
   }
-
+const success = (searchterm) => {
+  // console.log('lifted state')
+  // console.log("Iam a function")
+}
   const getSearchList = () => {}
   useEffect (() => {getTrackList()
   }, []);
     
 
   return (
+    
     <div className="Main" tracklist={tracklist}>
+    <Search artistsearch={success} /> 
+
     <h2>Trending Songs Chart</h2>
     {track}
     <Song tracklist={tracklist}/>
+    
   </div>
   )
 }
 
 export default Main;
+
+
+
+
+
+
+// import React, {useEffect, useState} from "react"
+// // App 
+// // import Artist from "./components/Artist"
+// import Song from "./Song"
+// function Main () {
+//   const [tracklist, setTrackList] =useState (null)
+//   // const [searchlist, setSearchList] =useState (null)
+ 
+//    let data =''
+//   const getTrackList = async () => {
+//     const response = await fetch("http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=17b400718485bd6dfb6eecc870698ec2&format=json")
+//     const data = await response.json()
+//    setTrackList(data.tracks)
+  
+//   //  console.log(data.message.body.track_list
+// }
+// let track = '';
+
+//   if (tracklist !== null) {
+
+//    for (let i = 0; i < tracklist.track.length; i++) {
+//      console.log(tracklist.track[i].name)
+//      console.log(tracklist.track[i].artist.name)
+//      console.log(tracklist.track[i].image[0])
+//    }
+    
+//   }
+
+//   const getSearchList = () => {}
+//   useEffect (() => {getTrackList()
+//   }, []);
+    
+
+//   return (
+//     <div className="Main" tracklist={tracklist}>
+//     <h2>Trending Songs Chart</h2>
+//     {track}
+//     <Song tracklist={tracklist}/>
+//   </div>
+//   )
+// }
+
+// export default Main;
 
 
 
