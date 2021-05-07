@@ -33,6 +33,7 @@ const Search = (props) => {
      
       </form>
     </div>
+    
   );
 };
 
