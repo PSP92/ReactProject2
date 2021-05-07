@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react"
-
+// moviedisplay
 function Artist () {
   const [artistlist, setArtistList] =useState ([])
    const [searchartist,setSearchArtist] =useState(null)
@@ -16,6 +16,10 @@ const handleChange =(event) =>{
   // console.log(searchartist)
   return <h2></h2>
 }
+const handleSumbit =(event) =>{
+  event.preventDefault();
+  
+}
 
 const loaded =() => {
   return  <h2>{artistlist[0].body.artist_list[0].artist.artist_id} Artist goes here</h2>
@@ -26,7 +30,7 @@ const loading =() => {
      
 return (
  <div className="Artist">
-     <form>
+     <form onSumbit={handleSumbit}>
        <input 
        type="text" 
        name="searchartist"

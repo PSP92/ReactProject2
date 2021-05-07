@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+// App 
 // import Artist from "./components/Artist"
 import Song from "./Song"
 function Main () {
