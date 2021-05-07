@@ -74,19 +74,16 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 1 |  |  |
-| Basic Navbar & Footer | H | 1 |  | |
-| Set up basic React routing | H | 1 |  |  |
-| API setup and call data | H | 2 | | |
-| Link data to artist | H | 2 |  | |
-|create artist cards| H | 2| | |
-| Link data to song | H | 2 | | |
-|Route all data | H | 2 | | |
-| Get the searchbar working| H | 3 |  | |
-| Incorporate selected options into API call | H | 1 | | |
-|styling for page | L | 4 |  |  |
-|styling for Navbar, Footer, other pages | L | 4 |  |  |
-|Toatal | | 25 |  |  |
+| Create React app and files for all components | H | 1 | 1 |  1|
+| Basic Navbar & Footer | H | 1 | 1 | 1|
+| Set up basic React routing | H | 1 |1  | 1 |
+| API setup and call data | H | 2 |10 | 10|
+|create artist cards| H | 2| 2| 2|
+|Route all data | H | 2 |2| 5|
+| Incorporate selected options into API call | H | 1 | 2| 10|
+|styling for page | L | 4 | 2 | 2 |
+|styling for Navbar, Footer, other pages | L | 4 | 2 |  2|
+|Toatal | | 25 | 24 | 34 |
 
 
 
